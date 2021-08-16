@@ -1,4 +1,7 @@
-# SocialNetworkUi
+# SocialNetworkTest
+
+![screencapture-localhost-4200-2021-08-16-10_28_25](https://user-images.githubusercontent.com/50153639/129507787-38e74851-0571-4b0e-b44b-9b28c198a11b.png)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
 
