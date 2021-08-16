@@ -1,0 +1,300 @@
+body {
+  background: #ffffff;
+}
+
+.title {
+  color: rgb(255, 237, 215);
+}
+
+.height {
+  height: 100vh;
+}
+
+.form {
+  position: relative;
+}
+
+.form-control {
+  background-color: rgb(255, 237, 215);
+}
+
+.form .fa-search {
+  color: #ac3737;
+}
+
+.form span {
+  position: absolute;
+  right: 17px;
+  top: 6px;
+  padding: 2px;
+  border-left: 1px solid #d1d5db;
+}
+
+.left-pan {
+  padding-left: 7px;
+}
+
+.left-pan i {
+  padding-left: 10px;
+}
+
+.form-input {
+  height: 35px;
+  width: 570px;
+  text-indent: 33px;
+  border-radius: 0px;
+  margin-top: 8px;
+}
+
+.form-input:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.btn-primary {
+  background-color: rgb(255, 237, 215);
+  margin-top: 7px;
+  border: none;
+  color: #ac3737;
+  border-radius: 0px;
+}
+
+
+
+.box {
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  margin: 0;
+  background-color: rgb(255, 237, 215);
+}
+
+.fa-user {
+  width: 30px;
+  height: 30px;
+  margin-left: -8px;
+}
+
+.breadcrumb {
+  background-color: #ac3737;
+}
+
+a,
+li,
+.breadcrumb-item {
+  color: rgb(255, 237, 215);
+  text-decoration: none;
+}
+
+li.breadcrumb-item.ml-5::before {
+  color: rgb(255, 237, 215);
+}
+
+.name {
+  font-size: 18px;
+  margin-top: 5px;
+  color: rgb(255, 237, 215);
+}
+
+.card-md {
+  height: 366px;
+  width: 29rem;
+  border-radius: 0px;
+  background-color: rgb(255, 237, 215);
+}
+
+.card-sm {
+  height: 175px;
+  width: 217px;
+  border-radius: 0px;
+  margin-top: -8px;
+  background-color: rgb(255, 237, 215);
+}
+
+.card-sm-1 {
+  height: 100px;
+  width: 220px;
+  border-radius: 0px;
+  background-color: rgb(255, 237, 215);
+}
+
+.card-sm-bg-red {
+  height: 175px;
+  width: 217px;
+  border-radius: 0px;
+  margin-top: -8px;
+  background-color: #ac3737;
+  border: 1px solid rgb(255, 237, 215);
+}
+
+.card-text {
+  color: rgb(255, 237, 215);
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.left {
+  margin-right: 40px !important;
+}
+
+.gap {
+  column-gap: 10px;
+}
+
+.card-img-top {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(255, 237, 215);
+}
+
+.box {
+  height: 70px;
+  width: 80px;
+  border-radius: 0px;
+  background-color: rgb(255, 237, 215);
+}
+
+.box-1 {
+  height: 120px;
+  width: 150px;
+  border-radius: 0px;
+  background-color: rgb(255, 237, 215);
+}
+
+.card-data {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+}
+
+.card-list {
+  height: 90px;
+  width: 430px;
+  background-color: #ac3737;
+  border: none;
+}
+
+.text-line-height {
+  margin-top: 9px;
+  line-height: 8pt;
+  color: rgb(255, 237, 215);
+}
+
+.text-wrap {
+  height: 100px;
+  width: 200px;
+  margin: 10px;
+  display: flex;
+  align-items: flex-end;
+  color: #ac3737;
+}
+
+.text-wrap-1 {
+  height: 120px;
+  width: 200px;
+  margin: 10px;
+  display: flex;
+  align-items: flex-end;
+  color: #ac3737;
+}
+
+.text-wrap span {
+  align-self: flex-end;
+}
+
+.hr-length {
+  width: 20rem;
+  margin-left: 20px;
+}
+
+.browse-videos {
+  margin-top: 10px;
+}
+
+.text-small {
+  font-size: 12px;
+}
+
+.text-color {
+  color: rgb(255, 237, 215);
+}
+
+hr {
+  border: 1px solid;
+   color: rgb(255, 237, 215);
+}
+
+
+@media screen and (max-width: 768px) {
+.form, .form-input {
+  width: 13rem;
+}
+
+body {
+  background: #ffffff;
+  max-height: 100%;
+}
+
+.breadcrumb-item .breadcrumb {
+  width: 100%;
+  min-width: 320px;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 5px;
+  counter-reset: flag;
+  text-align: center;
+
+}
+
+.card-md {
+width: 21rem;
+margin-left: 8px;
+}
+
+.card-sm {
+  height: 155px;
+  width: 217px;
+  margin-left: 4rem;
+  border-radius: 0px;
+  margin-top: 8px;
+  text-align: center;
+  background-color: rgb(255, 237, 215);
+}
+
+.card-sm-1 {
+  height: 100px;
+  width: 220px;
+  border-radius: 0px;
+  background-color: rgb(255, 237, 215);
+}
+
+.card-list {
+  margin-right: 10px;
+}
+
+.box-1 {
+  height: 120px;
+  width: 150px;
+  margin-left: 4rem;
+  border-radius: 0px;
+  background-color: rgb(255, 237, 215);
+}
+
+div.p-2.bd-highlight {
+  margin-right: 20px !important;
+  padding-right: 120px !important;
+  margin-right:12px
+}
+
+.card-sm-bg-red {
+  margin-left: 51px;
+}
+
+}

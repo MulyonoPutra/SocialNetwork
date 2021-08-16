@@ -1,0 +1,305 @@
+<div class="container">
+    <section id="header">
+        <div class="row mt-3">
+            <div class="col">
+                <h1 class="title">
+                    <strong>Social</strong>Network</h1>
+            </div>
+            <div class="col">
+                <div class="form">
+                    <input type="text" class="form-control form-input" placeholder="Find..."/>
+                    <span class="left-pan">
+                        <i class="fa fa-search"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-icon-text">
+                    <i class="fa fa-arrow-up btn-icon-prepend"></i>
+                    Upload
+                </button>
+            </div>
+            <div class="col">
+                <h5 class="name">Waseem Arsyad</h5>
+            </div>
+        </div>
+    </section>
+
+    <hr/>
+
+    <section id="navbar">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Videos</a>
+                    </li>
+                    <li class="breadcrumb-item ml-5">
+                        <a href="#">People</a>
+                    </li>
+                    <li class="breadcrumb-item ml-5">
+                        <a href="#">Documents</a>
+                    </li>
+                    <li class="breadcrumb-item ml-5">
+                        <a href="#">Events</a>
+                    </li>
+                    <li class="breadcrumb-item ml-5">
+                        <a href="#">Communities</a>
+                    </li>
+                    <li class="breadcrumb-item ml-5">
+                        <a href="#">Favourites</a>
+                    </li>
+                    <li class="breadcrumb-item ml-5">
+                        <a href="#">Channels</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <hr/>
+
+    <div class="row">
+
+        <div class="col-sm-8">
+            <div class="row text-color">
+                <div class="col browse-videos">
+                    <h2>Videos</h2>
+                </div>
+                <div class="col browse-videos">Browse videos</div>
+            </div>
+
+            <!-- List Videos -->
+            <div class="row">
+                <div class="col" style="padding: 1px">
+                    <div class="card card-md">
+                        <div class="card-body"></div>
+                    </div>
+                    <div class="row row-cols-2 mt-3" style="padding-top: 9px">
+                        <div class="col">
+                            <div class="card card-sm">
+                                <div class="card-body"><span class="text-wrap-1">John Stainor</span></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-sm">
+                                <div class="card-body"><span class="text-wrap-1">John Doe</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" style="padding: 1px">
+                    <div class="d-flex flex-column bd-highlight mb-3 mb-left">
+                        <div class="p-2 bd-highlight">
+                            <div class="card card-sm">
+                                <div class="card-body"><span class="text-wrap-1">Michael Keliph</span></div>
+                            </div>
+                        </div>
+                        <div class="p-2 bd-highlight mt-2">
+                            <div class="card card-sm">
+                                <div class="card-body"><span class="text-wrap-1">Michael Keliph</span></div>
+                            </div>
+                        </div>
+                        <div class="p-2 bd-highlight mt-2">
+                            <div class="card card-sm-bg-red">
+                                <div class="card-body card-text">Upload your own videos</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- List Videos -->
+        </div>
+
+        <!-- List Activity -->
+        <div class="col-sm-4">
+            <div class="row text-color">
+                <div class="col">
+                    <h2>Activity</h2>
+                </div>
+                <div class="col">View timeline/filter activities</div>
+            </div>
+            <hr/>
+
+            <div class="container" *ngFor="let activity of activities; let i = index">
+                <div class="card card-list">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                            <div class="card box"></div>
+                        </div>
+
+                        <div class="flex-grow-2 ms-2 ">
+                            <p class="text-line-height">
+                                <strong>{{ activity.username }}</strong>
+                                {{ activity.action }}
+                            </p>
+                            <p class="text-line-height">{{ activity.title }}</p>
+                            <p class="text-line-height text-small">
+                                {{ calculateDiff(activity) }}
+                                {{ hourTime(activity) }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr-length"/>
+        </div>
+        <!-- List Activity -->
+
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="row text-color">
+                    <div class="col browse-videos">
+                        <h2>People</h2>
+                    </div>
+                    <div class="col browse-videos">View All</div>
+                </div>
+
+                <!-- List People -->
+                <div class="row">
+                    <div class="col" style="padding: 1px">
+                        <div class="card card-md">
+                            <div class="card-body"></div>
+                        </div>
+                        <div class="row row-cols-2 mt-3" style="padding-top: 9px">
+                            <div class="col">
+                                <div class="card card-sm">
+                                    <div class="card-body"><span class="text-wrap-1">John Stainor</span></div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-sm">
+                                    <div class="card-body"><span class="text-wrap-1">John Stainor</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col left" style="padding: 1px">
+                        <div class="d-flex flex-column bd-highlight mb-3">
+                            <div class="p-2 bd-highlight">
+                                <div class="card card-sm">
+                                    <div class="card-body"><span class="text-wrap-1">John Stainor</span></div>
+                                </div>
+                            </div>
+                            <div class="p-2 bd-highlight mt-2">
+                                <div class="card card-sm">
+                                    <div class="card-body"><span class="text-wrap-1">John Stainor</span></div>
+                                </div>
+                            </div>
+                            <div class="p-2 bd-highlight mt-2">
+                                <div class="card card-sm-bg-red">
+                                    <div class="card-body card-text">Show your work</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-color">
+                    <div class="col browse-videos">
+                        <h2>Documents</h2>
+                    </div>
+                    <div class="col browse-videos">Browse All Documents</div>
+                </div>
+                <div class="row">
+                    <div class="col" style="padding: 1px">
+                        <div class="card card-md">
+                            <div class="card-body"></div>
+                        </div>
+                        <div class="row row-cols-2 mt-3" style="padding-top: 9px">
+                            <div class="col">
+                                <div class="card card-sm">
+                                    <div class="card-body"><span class="text-wrap-1">John Stainor</span></div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-sm">
+                                    <div class="card-body"><span class="text-wrap-1">John Stainor</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col left" style="padding: 1px">
+                        <div class="d-flex flex-column bd-highlight mb-3">
+                            <div class="p-2 bd-highlight">
+                                <div class="card card-sm">
+                                    <div class="card-body"><span class="text-wrap-1">John Stainor</span></div>
+                                </div>
+                            </div>
+                            <div class="p-2 bd-highlight mt-2">
+                                <div class="card card-sm">
+                                    <div class="card-body"><span class="text-wrap-1">John Stainor</span></div>
+                                </div>
+                            </div>
+                            <div class="p-2 bd-highlight mt-2">
+                                <div class="card card-sm-bg-red">
+                                    <div class="card-body card-text">Share your documents</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- List People -->
+            </div>
+
+            <!-- Channels -->
+            <div class="col-sm-4">
+                <div class="row text-color ml-2">
+                    <div class="col">
+                        <h2>Channels</h2>
+                    </div>
+                    <div class="col browse-videos">Browse all channels</div>
+                </div>
+                <hr class="hr-length"/>
+
+                <div class="container" class="pull-left readMore">
+                    <div class="row">
+                        <div class="mt-3 ml-3 col-md-5 position-relative" *ngFor="let channel of channels">
+                            <div class="card box-1">
+                                <span class="text-wrap">{{ channel.channelsName }}</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                </div>
+
+                <!-- Activity -->
+                <hr/>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#">Videos</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">People</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">Documents</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">Events</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">Communities</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">Favourites</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">Channels</a>
+            </li>
+        </ol>
+    </div>
+    <div class="container text-color">
+        <p>© Copyright 2013 companyname inc.</p>
+        <a>Privacy / Terms</a>
+    </div>
+    &nbsp;
+</div>
